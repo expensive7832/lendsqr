@@ -1,0 +1,24 @@
+@import "variable";
+
+.loader{
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem;
+    background-color: $green;
+}
+
+.loader img{
+    width: 100%;
+    animation: rotate 2s linear infinite;
+
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}

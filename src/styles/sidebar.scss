@@ -1,0 +1,70 @@
+@import "variable";
+
+
+
+.sidebar {
+    width: 250px;
+    background-color: #ffff;
+    min-height: 100vh;
+    padding: 2rem;
+    box-shadow: 2px 0 5px $darkgrey;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+    .sidebar-logo img{
+      object-fit: contain;
+      
+    }
+    .sidebar-menu ul {
+      list-style: none;
+      padding: 0;
+      .top-text{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+
+        p{
+          font-weight: 200;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          text-transform: capitalize;
+          font-size: 1rem;
+
+
+          &::after{
+            content: url(./../../public/Vector.png);
+            display: block;
+            margin-left: 0.3rem;
+            color: #dbdbdb;
+            font-size: 0.6rem;
+          }
+        }
+      }
+      li {
+        padding: 1rem 0;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: $darkblue;
+
+        img{
+          object-fit: contain;
+        }
+      }
+
+      p{
+        font-size: 0.8rem;
+        margin: 1rem 0;
+      }
+    }
+  }
+  
+
+.open{
+  display: block;
+  min-width: 90vw!important;
+}
