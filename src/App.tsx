@@ -5,10 +5,10 @@ import Loader from './components/Loader/Loader'
 
 // pages
 const Login = lazy(() => import("./Pages/Login"))
-const DashboardHome = lazy(() => import("./Pages/Dashboard/Home"))
-const Users = lazy(() => import("./Pages/Dashboard/Users"))
-const UserDetails = lazy(() => import("./Pages/Dashboard/UserDetails"))
-const Layout = lazy(() => import("./Pages/Dashboard/Layout"))
+// const DashboardHome = lazy(() => import("./Pages/Dashboard/Home"))
+// const Users = lazy(() => import("./Pages/Dashboard/Users"))
+// const UserDetails = lazy(() => import("./Pages/Dashboard/UserDetails"))
+// const Layout = lazy(() => import("./Pages/Dashboard/Layout"))
 
 function App() {
   return (
