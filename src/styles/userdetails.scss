@@ -1,0 +1,273 @@
+@import "variable";
+
+.userdetails {
+
+  .goback {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .two-column {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .d-flex,
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+  }
+
+  .second,
+  .first {
+    margin: 3rem 0;
+  }
+
+  .second {
+    .row p {
+      font-size: 0.6rem;
+      padding: 10px;
+
+      &:first-child {
+        border: 2px solid $red ;
+        border-radius: 5px;
+        color: $red;
+
+      }
+
+      &:last-child {
+        border: 2px solid $green ;
+        border-radius: 5px;
+        color: $green;
+      }
+    }
+  }
+
+  .third {
+
+    // UserProfile.scss
+    .user-profile {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      margin: 0 auto;
+      width: 100%;
+      font-family: Arial, sans-serif;
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+        padding-bottom: 20px;
+
+
+        .d-flex,
+        .tier {
+          border-right: 1px solid #ddd;
+          padding-right: 1rem;
+        }
+
+        .avatar {
+          width: 60px;
+          height: 60px;
+          background-color: #f0f0f0;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 24px;
+          color: #666;
+        }
+
+        .details {
+          margin-left: 10px;
+
+          h3 {
+            margin: 0;
+            font-size: 1.2rem;
+            color: #2d2d2d;
+          }
+
+          p {
+            margin: 0;
+            color: #888;
+            font-size: 0.9rem;
+          }
+        }
+
+        .tier {
+          text-align: center;
+
+          span {
+            font-size: 0.8rem;
+            color: #666;
+          }
+
+          .stars {
+            display: flex;
+
+            .star {
+              color: #ddd;
+              font-size: 1.2rem;
+
+              &.filled {
+                color: #ffcc00;
+              }
+            }
+          }
+        }
+
+        .balance {
+          text-align: right;
+
+          h3 {
+            margin: 0;
+            color: #1a73e8;
+            font-size: 1.5rem;
+          }
+
+          p {
+            margin: 0;
+            font-size: 0.8rem;
+            color: #888;
+          }
+        }
+      }
+
+      .tabs {
+        display: flex;
+        padding-top: 20px;
+        flex-wrap: wrap;
+
+        .tab {
+          width: 15%;
+          font-size: 0.9rem;
+          color: #666;
+          cursor: pointer;
+
+          &.active {
+            color: #1a73e8;
+            border-bottom: 2px solid #1a73e8;
+            padding-bottom: 2px;
+          }
+        }
+      }
+    }
+
+  }
+
+  .fourth {
+
+    margin: 1rem 0;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    .profile {
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 20px;
+
+      .section {
+        margin-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 5px;
+
+        h2 {
+          font-size: 1.2rem;
+          color: $darkblue;
+          margin: 10px 0;
+
+          padding-bottom: 1rem;
+        }
+
+        .row {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          font-size: 0.9rem;
+
+          div {
+            flex-basis: 20%;
+
+
+            margin-bottom: 10px;
+
+            p {
+              text-transform: uppercase;
+              font-size: 0.7rem;
+              color: #666;
+            }
+
+            h6 {
+              font-size: 1.1rem;
+              color: #666;
+              font-weight: 500;
+              margin-top: 0.3rem;
+            }
+          }
+        }
+      }
+
+      .section:last-child {
+        border-bottom: 0;
+      }
+    }
+
+  }
+
+  @media (max-width: 576px) {
+
+    .second,
+    .first {
+      margin: 0;
+    }
+
+    .two-column {
+      flex-direction: column;
+      align-items: start;
+      gap: 2rem;
+    }
+
+    .d-flex {
+      flex-direction: column;
+
+    }
+
+    .d-flex,
+    .tier {
+      border-right: none !important;
+      padding-right: 0 !important;
+
+    }
+
+    .tabs{
+      
+    }
+    
+    .tab{
+      margin-bottom: 1rem;
+      width: 50%!important;
+    }
+    .userdetails{
+      padding: 0.5rem;
+    }
+    .user-profile{
+      margin-top: 3rem!important;
+    }
+
+    .user-info {
+      flex-direction: column;
+      gap: 1rem;
+      padding-bottom: 0 !important;
+    }
+
+
+  }
+
+}
