@@ -9,7 +9,7 @@ import { FaEye, FaGreaterThan, FaLessThan, FaUserCheck, FaUserTimes } from 'reac
 import users, { User } from '../fakeDb/users';
 import { Link, useNavigate } from 'react-router-dom';
 
-const Table: React.FC = () => {
+const UserTable: React.FC = () => {
 
   useEffect(() => {
 
@@ -140,7 +140,7 @@ const Table: React.FC = () => {
                   <td className={`status ${user.status.toLowerCase()}`}>{user.status}</td>
 
 
-                  <td style={{position:"relative"}} onClick={() => {
+                  <td data-testid='openmodal' style={{position:"relative"}} onClick={() => {
                     
                     setSelectedRow(0)
                     setSelectedRow(user?.id)
@@ -214,4 +214,4 @@ const Table: React.FC = () => {
   )
 }
 
-export default Table;
+export default UserTable;
